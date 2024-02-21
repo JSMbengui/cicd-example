@@ -1,9 +1,12 @@
 package main
 
-func main () {
+import "testing"
 
-}
+func TestSoma(t *testing.T) {
 
-func Sum(a int, b int) int {
-	return a + b
+	total := soma(15, 15)
+
+	if total != 30 {
+		t.Errorf("Sum result is invalid: Result %d. Expected: %d", total, 30)
+	}
 }
