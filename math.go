@@ -1,12 +1,11 @@
 package main
 
-import "testing"
+import "fmt"
 
-func TestSoma(t *testing.T) {
+func main() {
+	fmt.Println(soma(112, 10))
+}
 
-	total := soma(15, 15)
-
-	if total != 30 {
-		t.Errorf("Sum result is invalid: Result %d. Expected: %d", total, 30)
-	}
+func soma(a int, b int) int {
+	return a + b
 }
